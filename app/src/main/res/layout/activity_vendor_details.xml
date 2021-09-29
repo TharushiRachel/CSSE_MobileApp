@@ -107,12 +107,11 @@
         />
 
     <Button
-        android:id="@+id/save"
+        android:id="@+id/next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_green_light"
         android:text="next"
-        android:onClick="sendMessageToSummary"
         android:textColor="#FFFFFF"
         android:padding="7dp"
         android:layout_marginLeft="155dp"

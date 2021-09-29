@@ -16,6 +16,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(SQL_CREATE_ENTRIES);
+        db.execSQL(SQL_CREATE_ENTRIES2);
     }
 
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -41,6 +42,17 @@ public class DBHelper extends SQLiteOpenHelper {
                     SiteProfile.Site.COLUMN_8 + " TEXT," +
                     SiteProfile.Site.COLUMN_9 + " TEXT)";
 
+
+    private static final String SQL_CREATE_ENTRIES2 =
+            "CREATE TABLE "+ VendorProfile.Vendor.TABLE_NAME + " (" +
+                    VendorProfile.Vendor._ID + " INTEGER PRIMARY KEY," +
+                    VendorProfile.Vendor.COLUMN_1 + " TEXT," +
+                    VendorProfile.Vendor.COLUMN_2 + " TEXT," +
+                    VendorProfile.Vendor.COLUMN_3 + " TEXT," +
+                    VendorProfile.Vendor.COLUMN_4+ " TEXT)";
+
+
+
     private static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + SiteProfile.Site.TABLE_NAME;
 
@@ -65,5 +77,22 @@ public class DBHelper extends SQLiteOpenHelper {
         long newRowId = db.insert(SiteProfile.Site.TABLE_NAME, null, values);
 
         return newRowId;
+    }
+
+
+    public long addVendorInfo(String vendorName, String vendorNumber, String vendorEmail, String vendorAddress){
+
+        SQLiteDatabase db = getWritableDatabase();
+
+
+        ContentValues values = new ContentValues();
+        values.put(VendorProfile.Vendor.COLUMN_1, vendorName);
+        values.put(VendorProfile.Vendor.COLUMN_2, vendorNumber);
+        values.put(VendorProfile.Vendor.COLUMN_3, vendorEmail);
+        values.put(VendorProfile.Vendor.COLUMN_4, vendorAddress);
+
+        long newVendorId = db.insert(VendorProfile.Vendor.TABLE_NAME, null, values);
+
+        return newVendorId;
     }
 }

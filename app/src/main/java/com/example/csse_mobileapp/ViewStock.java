@@ -15,7 +15,7 @@ public class ViewStock extends AppCompatActivity {
     }
 
     public void sendMessage1(View view) {
-        Intent intent = new Intent(this, PurchaseOrder.class);
+        Intent intent = new Intent(this, SiteDetails.class);
         startActivity(intent);
     }
 }

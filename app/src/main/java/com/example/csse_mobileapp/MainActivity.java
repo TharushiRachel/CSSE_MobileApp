@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sendMessage(View view) {
-        Intent intent = new Intent(this, SiteManagerLogin.class);
+        Intent intent = new Intent(this, ViewStock.class);
         startActivity(intent);
 
     }

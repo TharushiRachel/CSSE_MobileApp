@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VendorDetails">
+
+    <TextView
+        android:id="@+id/vendordetails_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vendor Details"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:id="@+id/vname_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vendor Name"
+        android:layout_below="@id/vendordetails_text"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/vname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:layout_below="@id/vname_text"
+        android:padding="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <TextView
+        android:id="@+id/vnumber_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Number"
+        android:layout_below="@id/vname"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/vnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:layout_below="@id/vnumber_text"
+        android:padding="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <TextView
+        android:id="@+id/vemail_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_below="@id/vnumber"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/vemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:layout_below="@id/vemail_text"
+        android:padding="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <TextView
+        android:id="@+id/vaddress_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_below="@id/vemail"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/vaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:layout_below="@id/vaddress_text"
+        android:padding="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:text="next"
+        android:onClick="sendMessageToSummary"
+        android:textColor="#FFFFFF"
+        android:padding="7dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginRight="145dp"
+        android:layout_marginTop="640dp"
+        />
+
+
+
+</RelativeLayout>

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PurchaseOrder"></activity>
+        <activity android:name=".OrderSummary"></activity>
+        <activity android:name=".VendorDetails" />
+        <activity android:name=".PurchaseOrder" />
         <activity android:name=".ViewStock" />
         <activity android:name=".SiteManagerLogin" />
         <activity android:name=".MainActivity">

@@ -6,16 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class PurchaseOrder extends AppCompatActivity {
+public class VendorDetails extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_purchase_order);
+        setContentView(R.layout.activity_vendor_details);
     }
 
-    public void sendMessageToVendor(View view) {
-        Intent intent = new Intent(this, VendorDetails.class);
+    public void sendMessageToSummary(View view) {
+        Intent intent = new Intent(this, OrderSummary.class);
         startActivity(intent);
     }
 }
+

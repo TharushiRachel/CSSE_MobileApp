@@ -117,7 +117,7 @@ public class SiteDetails extends AppCompatActivity {
             Toast.makeText(this, "Please enter the email", Toast.LENGTH_SHORT).show();
         }
         else {
-            loadingBar.setTitle("Add site details");
+            loadingBar.setTitle("Added site details");
             loadingBar.setMessage("Please wait for a moment");
             loadingBar.setCanceledOnTouchOutside(false);
             loadingBar.show();

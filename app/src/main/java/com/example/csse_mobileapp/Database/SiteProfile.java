@@ -19,5 +19,6 @@ public final class SiteProfile {
         public static final String COLUMN_7 = "orderDate";
         public static final String COLUMN_8 = "number";
         public static final String COLUMN_9 = "email";
+//        public static final String COLUMN_10 = "poNumber";
     }
 }

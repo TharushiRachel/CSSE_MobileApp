@@ -17,6 +17,133 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"/>
 
+<!--    <TextView-->
+<!--        android:id="@+id/stPONumber_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/stdetails_text"-->
+<!--        android:text="PO Number : "-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:textSize="15dp"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginTop="40dp"/>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/sitePONumber"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/stdetails_text"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:layout_marginLeft="175dp"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        />-->
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/siteManagerName"
+        android:background="@android:color/holo_blue_light"
+        android:text="search"
+        android:textColor="#FFFFFF"
+        android:padding="7dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginRight="155dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/stManagerName_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Site Manager Name : "
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/siteManagerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <TextView
+        android:id="@+id/stNumber_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:text="Site Contact Number : "
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/siteNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <TextView
+        android:id="@+id/stEmail_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stNumber_text"
+        android:text="Site Email : "
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/siteEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stNumber_text"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:text="Confirm"
+        android:textColor="#FFFFFF"
+        android:padding="7dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="240dp"
+        android:layout_marginTop="640dp"
+        />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:text="Cancel"
+        android:textColor="#FFFFFF"
+        android:padding="7dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="640dp"
+        />
 
 
 </RelativeLayout>

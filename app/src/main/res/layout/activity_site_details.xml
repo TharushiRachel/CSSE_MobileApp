@@ -19,6 +19,28 @@
             android:layout_marginTop="20dp"/>
 
         <TextView
+            android:id="@+id/poNumber_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PO Number"
+            android:layout_below="@id/stdetails_text"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/poNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_design"
+            android:layout_below="@id/poNumber_text"
+            android:padding="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
             android:id="@+id/name_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,7 +49,7 @@
             android:textColor="@android:color/black"
             android:textSize="15dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="100dp"/>
 
         <EditText
             android:id="@+id/name"
@@ -49,7 +71,7 @@
             android:textColor="@android:color/black"
             android:textSize="15dp"
             android:layout_marginLeft="240dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="100dp"/>
 
         <EditText
             android:id="@+id/department"

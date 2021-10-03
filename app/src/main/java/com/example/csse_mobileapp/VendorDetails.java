@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.csse_mobileapp.Database.DBHelper;
+import com.example.csse_mobileapp.Database.VendorDBHelper;
 
 public class VendorDetails extends AppCompatActivity {
 
@@ -30,7 +31,7 @@ public class VendorDetails extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DBHelper dbHelper = new DBHelper(getApplicationContext());
+                VendorDBHelper dbHelper = new VendorDBHelper(getApplicationContext());
 
                 long newVendorID = dbHelper.addVendorInfo(vendorName.getText().toString(),
                         vendorNumber.getText().toString(),

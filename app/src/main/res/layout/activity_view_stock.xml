@@ -46,12 +46,11 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text=" ID"
-                android:layout_margin="1dp"
                 android:layout_column="0"
                 android:background="#D3D3D3"
                 android:gravity="center"
                 android:padding="5dp"
-                android:textSize="15dp"
+                android:textSize="10dp"
                 />
 
             <TextView
@@ -59,12 +58,11 @@
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Item Name "
-                android:layout_margin="1dp"
                 android:layout_column="1"
                 android:background="#D3D3D3"
                 android:gravity="center"
-                android:padding="5dp"
-                android:textSize="15dp"
+                android:padding="3dp"
+                android:textSize="10dp"
                 />
 
             <TextView
@@ -72,51 +70,46 @@
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Unit Price"
-                android:layout_margin="1dp"
                 android:background="#D3D3D3"
                 android:gravity="center"
                 android:layout_column="2"
-                android:padding="5dp"
-                android:textSize="15dp"
+                android:textSize="10dp"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Calories"
-                android:layout_margin="1dp"
+                android:text="Threshold Units"
                 android:background="#D3D3D3"
                 android:gravity="center"
                 android:layout_column="2"
                 android:padding="5dp"
-                android:textSize="15dp"
+                android:textSize="10dp"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Units in Stock"
-                android:layout_margin="1dp"
+                android:text="Current Units"
                 android:background="#D3D3D3"
                 android:gravity="center"
                 android:layout_column="2"
                 android:padding="5dp"
-                android:textSize="15dp"
+                android:textSize="10dp"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="status"
-                android:layout_margin="1dp"
+                android:text="Action"
                 android:background="#D3D3D3"
                 android:gravity="center"
                 android:layout_column="2"
                 android:padding="5dp"
-                android:textSize="15dp"
+                android:textSize="10dp"
                 />
 
 
@@ -133,7 +126,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text=" ID"
+
                 android:layout_margin="1dp"
                 android:layout_column="0"
                 android:background="#FFFFFF"
@@ -146,7 +139,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Item Name "
+
                 android:layout_margin="1dp"
                 android:layout_column="1"
                 android:background="#FFFFFF"
@@ -159,7 +152,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Unit Price"
+
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
@@ -172,7 +165,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Calories"
+
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
@@ -185,7 +178,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Units in Stock"
+
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
@@ -198,7 +191,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="status"
+
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"

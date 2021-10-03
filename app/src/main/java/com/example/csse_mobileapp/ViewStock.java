@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.csse_mobileapp.Prevalent.Prevalent;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -59,8 +60,38 @@ public class ViewStock extends AppCompatActivity {
             }
         });
 
+//        itemInfoDisplay(itemName, unitPrice, thresholdUnits, currentUnits);
 
     }
+
+//    private void itemInfoDisplay(TextView itemName, TextView unitPrice, TextView thresholdUnits, TextView currentUnits) {
+//
+//        DatabaseReference ItemRef = FirebaseDatabase.getInstance().getReference("Items");
+//
+//        ItemRef.addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                if(snapshot.exists()){
+//                    if(snapshot.child("itemName").exists()){
+//                        String itemName1 = snapshot.child("itemName").getValue().toString();
+//                        String unitPrice1 = snapshot.child("price").getValue().toString();
+//                        String thresholdUnits1 = snapshot.child("thresholdUnits").getValue().toString();
+//                        String currentUnits1 = snapshot.child("currentUnits").getValue().toString();
+//
+//                        itemName.setText(itemName1);
+//                        unitPrice.setText(unitPrice1);
+//                        thresholdUnits.setText(thresholdUnits1);
+//                        currentUnits.setText(currentUnits1);
+//                    }
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
+//    }
 
     public void sendMessage1(View view) {
         Intent intent = new Intent(this, SiteDetails.class);

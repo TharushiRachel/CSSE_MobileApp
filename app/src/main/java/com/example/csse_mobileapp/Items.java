@@ -2,24 +2,24 @@ package com.example.csse_mobileapp;
 
 public class Items {
 
-    private String name, price, threshold_units, current_units;
+    private String itemName, price, thresholdUnits, currentUnits;
 
     public Items() {
     }
 
-    public Items(String name, String price, String threshold_units, String current_units) {
-        this.name = name;
+    public Items(String itemName, String price, String thresholdUnits, String currentUnits) {
+        this.itemName = itemName;
         this.price = price;
-        this.threshold_units = threshold_units;
-        this.current_units = current_units;
+        this.thresholdUnits = thresholdUnits;
+        this.currentUnits = currentUnits;
     }
 
-    public String getName() {
-        return name;
+    public String getItemName() {
+        return itemName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setItemName(String itemName) {
+        this.itemName = itemName;
     }
 
     public String getPrice() {
@@ -30,19 +30,19 @@ public class Items {
         this.price = price;
     }
 
-    public String getThreshold_units() {
-        return threshold_units;
+    public String getThresholdUnits() {
+        return thresholdUnits;
     }
 
-    public void setThreshold_units(String threshold_units) {
-        this.threshold_units = threshold_units;
+    public void setThresholdUnits(String thresholdUnits) {
+        this.thresholdUnits = thresholdUnits;
     }
 
-    public String getCurrent_units() {
-        return current_units;
+    public String getCurrentUnits() {
+        return currentUnits;
     }
 
-    public void setCurrent_units(String current_units) {
-        this.current_units = current_units;
+    public void setCurrentUnits(String currentUnits) {
+        this.currentUnits = currentUnits;
     }
 }

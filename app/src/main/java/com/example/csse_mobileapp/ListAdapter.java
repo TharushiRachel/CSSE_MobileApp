@@ -37,10 +37,10 @@ public class ListAdapter extends ArrayAdapter {
 
         Items items = itemList.get(position);
 
-        itemName.setText(items.getName());
+        itemName.setText(items.getItemName());
         unitPrice.setText(items.getPrice());
-        thresholdUnits.setText(items.getThreshold_units());
-        currentUnits.setText(items.getCurrent_units());
+        thresholdUnits.setText(items.getThresholdUnits());
+        currentUnits.setText(items.getCurrentUnits());
 
         return listItemView;
     }

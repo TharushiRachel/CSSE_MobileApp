@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -22,6 +23,8 @@ import java.util.List;
 public class ViewStock extends AppCompatActivity {
 
 //    TextView itemName, unitPrice, thresholdUnits, currentUnits;
+
+    CheckBox action;
     ListView myListView;
     DatabaseReference databaseReference;
     List<Items> itemsList;
@@ -31,12 +34,14 @@ public class ViewStock extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_stock);
 
-//        itemName = findViewById(R.id.itemName_add);
-//        unitPrice = findViewById(R.id.unitPrice_add);
-//        thresholdUnits = findViewById(R.id.thresholdUnit_add);
-//        currentUnits = findViewById(R.id.currentUnits_add);
+
+
+        action = findViewById(R.id.action_chkb);
+
         myListView = findViewById(R.id.myListView);
+//        itemListView = findViewById(R.id.myItemView);
         itemsList = new ArrayList<>();
+
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Item");
 
@@ -60,13 +65,40 @@ public class ViewStock extends AppCompatActivity {
             }
         });
 
-//        itemInfoDisplay(itemName, unitPrice, thresholdUnits, currentUnits);
+//        itemInfoDisplay(itemNameS, quantityS, unitPriceS);
 
     }
 
+//    private void itemInfoDisplay(TextView itemNameS, TextView quantityS, TextView unitPriceS) {
+//        DatabaseReference ItemRef = FirebaseDatabase.getInstance().getReference("Item");
+//
+//        ItemRef.addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                if(snapshot.exists()){
+//                    if(snapshot.child("itemName").exists()){
+//                        if(action.isChecked()){
+//                            String itemName = snapshot.child("itemName").getValue().toString();
+//                            String unitPrice = snapshot.child("price").getValue().toString();
+//
+//                            itemNameS.setText(itemName);
+//                            unitPriceS.setText(unitPrice);
+//                        }
+//                    }
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
+//
+//    }
+
 //    private void itemInfoDisplay(TextView itemName, TextView unitPrice, TextView thresholdUnits, TextView currentUnits) {
 //
-//        DatabaseReference ItemRef = FirebaseDatabase.getInstance().getReference("Items");
+//        DatabaseReference ItemRef = FirebaseDatabase.getInstance().getReference("Item");
 //
 //        ItemRef.addListenerForSingleValueEvent(new ValueEventListener() {
 //            @Override
@@ -94,7 +126,7 @@ public class ViewStock extends AppCompatActivity {
 //    }
 
     public void sendMessage1(View view) {
-        Intent intent = new Intent(this, SiteDetails.class);
+        Intent intent = new Intent(this, AddOrder.class);
         startActivity(intent);
     }
 

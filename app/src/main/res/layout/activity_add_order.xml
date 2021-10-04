@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddOrder">
+
+    <TextView
+        android:id="@+id/addOrder_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Order"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/addItemName_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addOrder_text"
+        android:text="Item Name"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/addItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:layout_below="@id/addItemName_text"
+        android:padding="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <TextView
+        android:id="@+id/addUnitPrice_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addItemName"
+        android:text="Unit Price"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/addUnitPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:layout_below="@id/addUnitPrice_text"
+        android:padding="7dp"
+        android:inputType="number"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <TextView
+        android:id="@+id/addQuantity_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addUnitPrice"
+        android:text="Quantity"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/addQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:layout_below="@id/addQuantity_text"
+        android:inputType="number"
+        android:padding="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <Button
+        android:id="@+id/calculateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addQuantity"
+        android:background="@drawable/buttons"
+        android:text="calculate"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:hint="Total"
+        android:layout_below="@id/calculateBtn"
+        android:padding="7dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total"
+        android:background="@drawable/buttons"
+        android:text="next"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="150dp"
+        />
+
+</RelativeLayout>

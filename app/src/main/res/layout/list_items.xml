@@ -1,114 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:padding="5dp">
 
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:textAppearance="?android:attr/textAppearanceLarge"-->
-<!--        android:text="id"-->
-<!--        android:layout_margin="1dp"-->
-<!--        android:background="#FFFFFF"-->
-<!--        android:gravity="center"-->
-<!--        android:padding="5dp"-->
-<!--        android:textSize="15dp"-->
-<!--        />-->
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--        android:text="id"-->
+    <!--        android:layout_margin="1dp"-->
+    <!--        android:background="#FFFFFF"-->
+    <!--        android:gravity="center"-->
+    <!--        android:padding="5dp"-->
+    <!--        android:textSize="15dp"-->
+    <!--        />-->
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <TableRow>
+
+        <TableRow>
 
 
-        <TextView
-            android:id="@+id/id_add"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_margin="1dp"
-            android:text="id"
-            android:layout_column="1"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:padding="5dp"
-            android:textSize="15dp"
-            />
+            <TextView
+                android:id="@+id/id_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="id"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15dp" />
 
 
-    <TextView
-        android:id="@+id/itemName_add"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_margin="1dp"
-        android:text="item name"
-        android:layout_column="1"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:padding="5dp"
-        android:textSize="15dp"
-        />
+            <TextView
+                android:id="@+id/itemName_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="item name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15dp" />
 
-    <TextView
-        android:id="@+id/unitPrice_add"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_margin="1dp"
-        android:text="Unit price"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:layout_column="2"
-        android:padding="5dp"
-        android:textSize="15dp"
-        />
+            <TextView
+                android:id="@+id/unitPrice_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Unit price"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15dp" />
 
-    <TextView
-        android:id="@+id/thresholdUnit_add"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_margin="1dp"
-        android:text="Threshold units"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:layout_column="2"
-        android:padding="5dp"
-        android:textSize="15dp"
-        />
+            <TextView
+                android:id="@+id/thresholdUnit_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Threshold units"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15dp" />
 
-    <TextView
-        android:id="@+id/currentUnits_add"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_margin="1dp"
-        android:text="Current units"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:layout_column="2"
-        android:padding="5dp"
-        android:textSize="15dp"
-        />
+            <TextView
+                android:id="@+id/currentUnits_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Current units"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15dp" />
 
-        android:layout_margin="1dp"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:layout_column="2"
-        android:padding="5dp"
-        android:textSize="15dp"
-        />
+            <CheckBox
+                android:id="@+id/action_chkb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
-    </TableRow>
+
+        </TableRow>
 
     </TableLayout>
 

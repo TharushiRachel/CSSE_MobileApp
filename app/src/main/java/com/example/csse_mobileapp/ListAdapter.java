@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.google.firebase.database.annotations.NotNull;
@@ -16,6 +17,7 @@ public class ListAdapter extends ArrayAdapter {
 
     private Activity mContext;
     List<Items> itemList;
+
 
     public ListAdapter(Activity mContext, List<Items> itemList){
         super(mContext, R.layout.list_items, itemList);
@@ -35,6 +37,7 @@ public class ListAdapter extends ArrayAdapter {
         TextView thresholdUnits = listItemView.findViewById(R.id.thresholdUnit_add);
         TextView currentUnits = listItemView.findViewById(R.id.currentUnits_add);
 
+
         Items items = itemList.get(position);
 
         itemName.setText(items.getItemName());
@@ -42,7 +45,12 @@ public class ListAdapter extends ArrayAdapter {
         thresholdUnits.setText(items.getThresholdUnits());
         currentUnits.setText(items.getCurrentUnits());
 
+
         return listItemView;
     }
+
+
+
+
 
 }

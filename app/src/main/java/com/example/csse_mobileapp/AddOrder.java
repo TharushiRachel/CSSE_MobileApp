@@ -129,7 +129,7 @@ public class AddOrder extends AppCompatActivity {
                                         totalP.setText("Total Price = Rs.500");
 
                                         Order order = new Order();
-                                        overTotalPrice = overTotalPrice+order.getTotal();
+                                        overTotalPrice = overTotalPrice+order.getTotal(price, quantity1);
 
 //                                        totalP.setText("Total Price = Rs." +String.valueOf(overTotalPrice));
 

@@ -39,8 +39,11 @@ public class Order {
         this.quantity = quantity;
     }
 
-    public double getTotal(){
+    public double getTotal(double UnitPrice, double quantity){
         total = total + UnitPrice*quantity;
         return total;
     }
+
+
+
 }

@@ -42,22 +42,6 @@ public class VendorDetails extends AppCompatActivity {
         next = findViewById(R.id.next);
         loadingBar = new ProgressDialog(this);
 
-//        next.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                VendorDBHelper dbHelper = new VendorDBHelper(getApplicationContext());
-//
-//                long newVendorID = dbHelper.addVendorInfo(vendorName.getText().toString(),
-//                        vendorNumber.getText().toString(),
-//                        vendorEmail.getText().toString(),
-//                        vendorAddress.getText().toString());
-//
-//                Toast.makeText(VendorDetails.this, "Details added successfully. ID : " +newVendorID, Toast.LENGTH_SHORT).show();
-//
-//                Intent i = new Intent(getApplicationContext(), OrderSummary.class);
-//                startActivity(i);
-//            }
-//        });
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,7 +103,7 @@ public class VendorDetails extends AppCompatActivity {
                                         Toast.makeText(VendorDetails.this, "Data added successfully", Toast.LENGTH_SHORT).show();
                                         loadingBar.dismiss();
 
-                                        Intent i = new Intent(VendorDetails.this, OrderSummary.class);
+                                        Intent i = new Intent(VendorDetails.this, ViewStock.class);
                                         startActivity(i);
                                     }
                                     else{

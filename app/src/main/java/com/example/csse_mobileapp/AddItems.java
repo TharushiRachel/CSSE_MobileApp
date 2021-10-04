@@ -25,7 +25,7 @@ import java.util.HashMap;
 public class AddItems extends AppCompatActivity {
 
     EditText itemName, unitPrice, thresholdUnits, currentUnits;
-    Button save;
+    Button save, newRequisition;
     private ProgressDialog loadingBar;
 
     @Override
@@ -38,6 +38,7 @@ public class AddItems extends AppCompatActivity {
         thresholdUnits = findViewById(R.id.thresholdUnit);
         currentUnits = findViewById(R.id.currentUnits);
         save = findViewById(R.id.saveItem);
+        newRequisition = (Button) findViewById(R.id.createRequisition);
         loadingBar = new ProgressDialog(this);
 
         save.setOnClickListener(new View.OnClickListener() {

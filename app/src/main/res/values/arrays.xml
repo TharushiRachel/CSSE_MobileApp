@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="site_names">arrays.xml
+
+
+        <item>Site 1</item>
+        <item>Site 2</item>
+        <item>Site 3</item>
+        <item>Site 4</item>
+        <item>Site 5</item>
+    </string-array>
+</resources>

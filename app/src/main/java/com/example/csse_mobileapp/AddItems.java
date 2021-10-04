@@ -48,6 +48,18 @@ public class AddItems extends AppCompatActivity {
             }
         });
 
+        newRequisition.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                createNewRequisition();
+            }
+        });
+
+    }
+
+    private void createNewRequisition() {
+        Intent intent = new Intent(this, NewRequisition.class);
+        startActivity(intent);
     }
 
     private void AddItemDetail() {

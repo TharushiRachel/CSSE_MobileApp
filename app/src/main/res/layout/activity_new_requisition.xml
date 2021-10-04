@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewRequisition">
+
+    <TextView
+        android:id="@+id/new_requisition_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="New Requisition"
+        android:textColor="@android:color/black"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/requester_name_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_requisition_text"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:text="Requester Name"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/requesterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:layout_below="@id/requester_name_textview"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:id="@+id/purchase_request_date_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/requesterName"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:text="Purchase Request Date"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/purchaseRequestDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purchase_request_date_textview"
+        android:background="@drawable/input_design"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Select a date"
+        android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+        android:drawableRight="@drawable/ic_baseline_calendar_today_24" />
+
+    <TextView
+        android:id="@+id/delivery_date_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purchaseRequestDate"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:text="Delivery Date"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/deliveryDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delivery_date_textview"
+        android:background="@drawable/input_design"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Select a date"
+        android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+        android:drawableRight="@drawable/ic_baseline_calendar_today_24" />
+
+    <TextView
+        android:id="@+id/site_name_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deliveryDate"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:text="Site Name"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:padding="8dp"/>
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:hint="Select one"-->
+<!--        android:layout_below="@id/site_name_textview"-->
+
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">-->
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/site_list_autoCompleteTextview"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/input_design"-->
+<!--            android:inputType="none"-->
+<!--            >-->
+<!--        </AutoCompleteTextView>-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/site_name_textview"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+
+
+        >
+    </Spinner>
+
+    <TextView
+        android:id="@+id/further_details_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/site_name_textview"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="15dp"
+        android:text="Further Details"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/further_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:layout_below="@id/further_details_textview"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purchaseRequestDate"
+        android:background="@drawable/buttons"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="360dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

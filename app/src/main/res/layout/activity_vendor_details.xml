@@ -110,12 +110,12 @@
         android:id="@+id/next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_green_light"
-        android:text="next"
+        android:background="@drawable/buttons"
+        android:text="add"
         android:textColor="#FFFFFF"
         android:padding="7dp"
-        android:layout_marginLeft="155dp"
-        android:layout_marginRight="145dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_marginTop="640dp"
         />
 

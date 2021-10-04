@@ -149,30 +149,10 @@
             android:layout_below="@id/location_text"
             android:padding="7dp"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="285dp"
+            android:layout_marginRight="215dp"
             />
 
-        <TextView
-            android:id="@+id/bstatus_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Budget Status"
-            android:layout_below="@id/vendorT"
-            android:textColor="@android:color/black"
-            android:textSize="15dp"
-            android:layout_marginLeft="160dp"
-            android:layout_marginTop="15dp"/>
 
-        <EditText
-            android:id="@+id/bstatus"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/input_design"
-            android:layout_below="@id/bstatus_text"
-            android:padding="7dp"
-            android:layout_marginLeft="155dp"
-            android:layout_marginRight="145dp"
-            />
 
         <TextView
             android:id="@+id/odate_text"
@@ -182,7 +162,7 @@
             android:layout_below="@id/vendorT"
             android:textColor="@android:color/black"
             android:textSize="15dp"
-            android:layout_marginLeft="290dp"
+            android:layout_marginLeft="240dp"
             android:layout_marginTop="15dp"/>
 
         <EditText
@@ -192,7 +172,7 @@
             android:background="@drawable/input_design"
             android:layout_below="@id/odate_text"
             android:padding="7dp"
-            android:layout_marginLeft="285dp"
+            android:layout_marginLeft="215dp"
             android:layout_marginRight="15dp"
             android:inputType="date"
             />
@@ -246,12 +226,12 @@
         android:id="@+id/save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_green_light"
+        android:background="@drawable/buttons"
         android:text="next"
         android:textColor="#FFFFFF"
         android:padding="7dp"
-        android:layout_marginLeft="155dp"
-        android:layout_marginRight="145dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_marginTop="640dp"
         />
 

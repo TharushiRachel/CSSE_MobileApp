@@ -55,6 +55,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/input_design"
         android:layout_below="@id/unitPrice_text"
+        android:inputType="number"
         android:padding="7dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
@@ -78,6 +79,7 @@
         android:background="@drawable/input_design"
         android:layout_below="@id/thresholdUnit_text"
         android:padding="7dp"
+        android:inputType="number"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         />
@@ -99,6 +101,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/input_design"
         android:layout_below="@id/currentUnits_text"
+        android:inputType="number"
         android:padding="7dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"

@@ -35,7 +35,7 @@
         android:gravity="center">
 
         <TableRow
-            android:background="#000000"
+            android:background="#D3D3D3"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_margin="1dp"
@@ -48,7 +48,7 @@
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Item Name "
-                android:layout_column="1"
+                android:layout_column="0"
                 android:background="#D3D3D3"
                 android:gravity="center"
                 android:padding="3dp"
@@ -62,7 +62,7 @@
                 android:text="Unit Price"
                 android:background="#D3D3D3"
                 android:gravity="center"
-                android:layout_column="2"
+                android:layout_column="1"
                 android:textSize="10dp"
                 />
 
@@ -85,22 +85,11 @@
                 android:text="Current Units"
                 android:background="#D3D3D3"
                 android:gravity="center"
-                android:layout_column="2"
+                android:layout_column="3"
                 android:padding="5dp"
                 android:textSize="10dp"
                 />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Action"
-                android:background="#D3D3D3"
-                android:gravity="center"
-                android:layout_column="2"
-                android:padding="5dp"
-                android:textSize="10dp"
-                />
 
 
         </TableRow>
@@ -110,7 +99,8 @@
             android:id="@+id/myListView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"/>
+            android:padding="5dp"
+            android:layout_marginTop="180dp"/>
 
 
 

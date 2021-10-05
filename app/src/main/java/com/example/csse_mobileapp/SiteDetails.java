@@ -38,7 +38,6 @@ public class SiteDetails extends AppCompatActivity {
         vendorType = findViewById(R.id.vendorT);
         deliveryDate = findViewById(R.id.ddate);
         deliveryLocation = findViewById(R.id.location);
-        status = findViewById(R.id.bstatus);
         orderDate = findViewById(R.id.odate);
         number = findViewById(R.id.number);
         email = findViewById(R.id.email);

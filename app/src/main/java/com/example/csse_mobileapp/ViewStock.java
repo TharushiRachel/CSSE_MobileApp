@@ -36,7 +36,7 @@ public class ViewStock extends AppCompatActivity {
 
 
 
-        action = findViewById(R.id.action_chkb);
+
 
         myListView = findViewById(R.id.myListView);
 //        itemListView = findViewById(R.id.myItemView);

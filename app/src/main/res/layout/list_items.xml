@@ -3,27 +3,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:padding="5dp">
+    android:padding="5dp"
+    android:layout_marginTop="180dp">
 
 
 
 <!--    <TableLayout-->
 <!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="180dp">-->
+<!--        android:layout_height="wrap_content">-->
 
-<!--        <TableRow>-->
+<!--        <TableRow-->
+<!--            android:background="#D3D3D3"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_margin="1dp"-->
+<!--            android:layout_weight="1">-->
 
 
             <TextView
                 android:id="@+id/itemName_add"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="item name"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="15dp" />
 
@@ -31,9 +37,9 @@
                 android:id="@+id/unitPrice_add"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
+                android:layout_marginLeft="40dp"
                 android:padding="5dp"
                 android:text="Unit price"
                 android:textAppearance="?android:attr/textAppearanceLarge"
@@ -43,10 +49,11 @@
                 android:id="@+id/thresholdUnit_add"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
+                android:layout_marginLeft="60dp"
                 android:padding="5dp"
+                android:layout_column="2"
                 android:text="Threshold units"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="15dp" />
@@ -55,32 +62,18 @@
                 android:id="@+id/currentUnits_add"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
+                android:layout_marginLeft="60dp"
+                android:layout_column="3"
                 android:padding="5dp"
                 android:text="Current units"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="15dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:background="#FFFFFF"
-                android:gravity="center"
-                android:padding="5dp"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="15dp" />
 
-            <CheckBox
-                android:id="@+id/action_chkb"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="18sp" />
+
+
 
 
 <!--        </TableRow>-->

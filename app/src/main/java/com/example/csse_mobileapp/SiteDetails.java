@@ -45,27 +45,6 @@ public class SiteDetails extends AppCompatActivity {
         next = findViewById(R.id.save);
         loadingBar = new ProgressDialog(this);
 
-//        next.setOnClickListener(new View.OnClickListener() {
-////            @Override
-////            public void onClick(View view) {
-////                DBHelper dbHelper = new DBHelper(getApplicationContext());
-////                long newID = dbHelper.addSiteInfo(siteManagerName.getText().toString(),
-////                        department.getText().toString(),
-////                        vendorType.getText().toString(),
-////                        deliveryDate.getText().toString(),
-////                        deliveryLocation.getText().toString(),
-////                        status.getText().toString(),
-////                        orderDate.getText().toString(),
-////                        number.getText().toString(),
-////                        email.getText().toString());
-//////                        poNumber.getText().toString());
-////
-////                Toast.makeText(SiteDetails.this, "Details added successfully. Order ID : "+newID, Toast.LENGTH_SHORT).show();
-////
-////                Intent i = new Intent(getApplicationContext(), VendorDetails.class);
-////                startActivity(i);
-////            }
-////        });
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -7,19 +7,6 @@
     android:layout_marginTop="180dp">
 
 
-
-<!--    <TableLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
-
-<!--        <TableRow-->
-<!--            android:background="#D3D3D3"-->
-<!--            android:layout_width="fill_parent"-->
-<!--            android:layout_height="0dp"-->
-<!--            android:layout_margin="1dp"-->
-<!--            android:layout_weight="1">-->
-
-
             <TextView
                 android:id="@+id/itemName_add"
                 android:layout_width="wrap_content"
@@ -72,12 +59,5 @@
                 android:textSize="15dp" />
 
 
-
-
-
-
-<!--        </TableRow>-->
-
-<!--    </TableLayout>-->
 
 </LinearLayout>

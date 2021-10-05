@@ -55,14 +55,6 @@ public class AddOrder extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 AddOrderDetails();
-
-//                totalP.setText("Total Price = Rs." +String.valueOf(overTotalPrice));
-//                totalP.setText("500");
-
-//                Intent i = new Intent(AddOrder.this, AddOrder.class);
-//                i.putExtra("Total Price ", String.valueOf(overTotalPrice));
-//                startActivity(i);
-//                finish();
             }
         });
 
@@ -123,15 +115,10 @@ public class AddOrder extends AppCompatActivity {
                                         Toast.makeText(AddOrder.this, "Data added successfully", Toast.LENGTH_SHORT).show();
                                         loadingBar.dismiss();
 
-//                                        Intent i = new Intent(AddOrder.this, AddOrder.class);
-//                                        startActivity(i);
-
-                                        totalP.setText("Total Price = Rs.500");
-
                                         Order order = new Order();
                                         overTotalPrice = overTotalPrice+order.getTotal(price, quantity1);
 
-//                                        totalP.setText("Total Price = Rs." +String.valueOf(overTotalPrice));
+                                        totalP.setText("Total Price = Rs." +String.valueOf(overTotalPrice));
 
                                     }
                                     else{
@@ -143,14 +130,7 @@ public class AddOrder extends AppCompatActivity {
                             });
                 }
 
-//                else {
-//                    Toast.makeText(AddOrder.this, "PO number already exists", Toast.LENGTH_SHORT).show();
-//                    loadingBar.dismiss();
-//                    Toast.makeText(SiteDetails.this, "Add another PO number", Toast.LENGTH_SHORT).show();
-//
-//                    Intent i = new Intent(SiteDetails.this, ViewStock.class);
-//                    startActivity(i);
-//                }
+
             }
 
             @Override

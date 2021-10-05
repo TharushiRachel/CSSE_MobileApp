@@ -22,9 +22,6 @@ import java.util.List;
 
 public class ViewStock extends AppCompatActivity {
 
-//    TextView itemName, unitPrice, thresholdUnits, currentUnits;
-
-    CheckBox action;
     ListView myListView;
     DatabaseReference databaseReference;
     List<Items> itemsList;
@@ -34,12 +31,7 @@ public class ViewStock extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_stock);
 
-
-
-
-
         myListView = findViewById(R.id.myListView);
-//        itemListView = findViewById(R.id.myItemView);
         itemsList = new ArrayList<>();
 
 
@@ -65,65 +57,10 @@ public class ViewStock extends AppCompatActivity {
             }
         });
 
-//        itemInfoDisplay(itemNameS, quantityS, unitPriceS);
 
     }
 
-//    private void itemInfoDisplay(TextView itemNameS, TextView quantityS, TextView unitPriceS) {
-//        DatabaseReference ItemRef = FirebaseDatabase.getInstance().getReference("Item");
-//
-//        ItemRef.addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                if(snapshot.exists()){
-//                    if(snapshot.child("itemName").exists()){
-//                        if(action.isChecked()){
-//                            String itemName = snapshot.child("itemName").getValue().toString();
-//                            String unitPrice = snapshot.child("price").getValue().toString();
-//
-//                            itemNameS.setText(itemName);
-//                            unitPriceS.setText(unitPrice);
-//                        }
-//                    }
-//                }
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//
-//            }
-//        });
-//
-//    }
 
-//    private void itemInfoDisplay(TextView itemName, TextView unitPrice, TextView thresholdUnits, TextView currentUnits) {
-//
-//        DatabaseReference ItemRef = FirebaseDatabase.getInstance().getReference("Item");
-//
-//        ItemRef.addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                if(snapshot.exists()){
-//                    if(snapshot.child("itemName").exists()){
-//                        String itemName1 = snapshot.child("itemName").getValue().toString();
-//                        String unitPrice1 = snapshot.child("price").getValue().toString();
-//                        String thresholdUnits1 = snapshot.child("thresholdUnits").getValue().toString();
-//                        String currentUnits1 = snapshot.child("currentUnits").getValue().toString();
-//
-//                        itemName.setText(itemName1);
-//                        unitPrice.setText(unitPrice1);
-//                        thresholdUnits.setText(thresholdUnits1);
-//                        currentUnits.setText(currentUnits1);
-//                    }
-//                }
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//
-//            }
-//        });
-//    }
 
     public void sendMessage1(View view) {
         Intent intent = new Intent(this, AddOrder.class);
